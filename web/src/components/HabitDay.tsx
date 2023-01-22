@@ -29,9 +29,9 @@ export function HabitDay({amount = 0, defaultCompleted = 0, date}: HabitDayProps
             <Popover.Trigger
                 style={{transition: '.2s'}}
                 className={
-                clsx("w-10 h-10 bg-zinc-900 border-2 border-zinc-800 rounded-lg" +
-                    "focus:outline-none focus:ring-2 focus:ring-violet-600" +
-                    "focus:ring-offset-2 focus:ring-offset-background", {
+                clsx("w-10 h-10 bg-zinc-900 border-2 border-zinc-800 rounded-lg " +
+                    "focus:outline-none focus:ring-2 focus:ring-violet-600 " +
+                    "focus:ring-offset-2 focus:ring-offset-background ", {
                     'bg-zinc-900 border-zinc-800': progress === 0,
                     'bg-violet-900 border-violet-700': progress > 0 && progress < 20,
                     'bg-violet-800 border-violet-600': progress >= 20 && progress < 40,
